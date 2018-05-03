@@ -1,0 +1,23 @@
+body{
+  section {
+    &.contact {
+      background-image: url("./assets/images/mountainsbw.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      min-height: 60vh;
+      text-align: center;
+      .content {
+        margin: auto;
+        padding: 1.5em 1em;
+        p {
+          color: white;
+          font-size: 1.5em;
+          padding-bottom: 1em;
+        }
+      }
+    }
+  }
+}

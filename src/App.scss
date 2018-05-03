@@ -1,0 +1,36 @@
+@import "./styles/nav";
+@import "./styles/banner";
+@import "./styles/portfolio";
+@import "./styles/medium-posts";
+@import "./styles/talks";
+@import "./styles/contact";
+@import "./styles/social-button";
+@import "./styles/footer";
+@import "./styles/updates";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #5F5F5F;
+  p {
+    font-family: 'Open Sans', sans-serif;
+  }
+  h1, h2, h3, a {
+    font-family: 'Domine', serif;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  h1 {
+    &.section-heading {
+      background-color: #2f2f2f;
+      text-align: center;
+      text-transform: uppercase;
+      padding: .5em;
+    }
+  }
+} //closes body rule
