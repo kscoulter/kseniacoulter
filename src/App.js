@@ -13,6 +13,7 @@ import manspreading from './assets/images/isitmanspreading.png';
 import constellation from './assets/images/github_constellation_roadshow.png';
 import forwardJs from './assets/images/ForwardJS.jpeg';
 import nzHerald from './assets/images/nzherald.jpg';
+import infobae from './assets/images/infobae.png';
 
 class App extends Component {
   render() {
@@ -91,18 +92,24 @@ class App extends Component {
         <section className="portfolio">
           <SectionHeading heading="portfolio"/>
           <ProjectCard
+            name="Progressive Web App for Infobae"
+            description={<span><p>Argentia-based Infobae is one of the most read Spanish language media in the world. PWA is particularly important for Latin American audience because of connectivity issues common in the region and because mobile accounts for 78% of Infobae's traffic. Fast performing PWA pages resulted in a low bounce rate of 6.8% and engaged readers for over 5 minutes.</p></span>}
+            url="https://app.infobae.com/"
+            image={infobae} />
+          <ProjectCard
             name="New Zealand Herald"
-            description="I was part of the team that built the new New Zealand Herald website. Worked closely with all stakeholders in order to keep the project advancing at pace despite the significant time zone differences, including working on-site with for launch. I was specifically responsible for images, galleries, and sliders functionality on the site. Nzherald.co.nz won Canon Media Awards for Website of the Year in 2017."
+            description={<span><p>I was part of the team that built the new New Zealand Herald website. Worked closely with all stakeholders in order to keep the project advancing at pace despite the significant time zone differences, including working on-site with for launch. I was specifically responsible for images, galleries, and sliders functionality on the site.</p>
+            <p>Nzherald.co.nz won Canon Media Awards for Website of the Year in 2017.</p></span>}
             url="http://www.nzherald.co.nz/"
             image={nzHerald} />
           <ProjectCard
             name="Concentration"
-            description="Test your memory with this space-themed concentration game, just beware of the aliens."
+            description={<span><p>Test your memory with this space-themed concentration game, just beware of the aliens.</p></span>}
             url="https://github.com/kscoulter/kscoulter.github.io"
             image={concentration} />
           <ProjectCard
             name="Is It Manspreading?"
-            description="Have you ever wondered if you're taking up too much space on public trasportation? This brainchild of Comedy Hack Day DC lets you link to an image of your spread, determines your spread degree, and lets you know if it is within acceptable range."
+            description={<span><p>Have you ever wondered if you're taking up too much space on public trasportation? This brainchild of Comedy Hack Day DC lets you link to an image of your spread, determines your spread degree, and lets you know if it is within acceptable range.</p></span>}
             url="http://isitmanspreading.com"
             image={manspreading} />
           {/* <ProjectCard

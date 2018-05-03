@@ -244,7 +244,8 @@ body section.updates .generic-card {
 body {
   color: #5F5F5F; }
   body p {
-    font-family: 'Open Sans', sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1em; }
   body h1, body h2, body h3, body a {
     font-family: 'Domine', serif; }
   body a {
