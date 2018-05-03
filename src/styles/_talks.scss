@@ -1,0 +1,48 @@
+body {
+  .talks {
+    .card-container {
+      color: white;
+      .card {
+        padding: 1em;
+        h2 {
+          margin-bottom: .5em;
+          letter-spacing: 1px;
+        }
+        p {
+          margin-bottom: .5em;
+          line-height: 1.5em;
+          letter-spacing: 0.5px;
+        }
+        .talk-links{
+          padding-top: 2em;
+          a {
+            padding: .5em 1em;
+            background-color: rgba(0,0,0,.2);
+            margin-left: 3px;
+            &:first-of-type {
+              margin-left: 0;
+            }
+            &:hover {
+              background-color: rgba(0,0,0,.3);
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1070px){
+    .talks {
+      .card-container {
+        display: flex;
+        .card {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          .talk-links {
+            margin-top: auto;
+          }
+        }
+      }
+    }
+  }
+}
